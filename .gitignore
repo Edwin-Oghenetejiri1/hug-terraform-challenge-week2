@@ -1,0 +1,12 @@
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+*.tfvars
+crash.log
+crash.*.log
+*.pem
+*.key
+id_rsa
+id_ed25519
+id_ed25519.pub
