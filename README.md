@@ -27,24 +27,24 @@ This project refactors the Week 1 flat Terraform configuration into reusable mod
 
 ## 🏗️ Architecture
 
+```
 Root Module (main.tf)
-↓
+        ↓
 ┌───────────────────────────────────────┐
-│ module/vpc → VPC │
-│ module/networking → Subnet │
-│ → IGW │
-│ → Route Table │
-│ module/security-group → SG rules │
-│ module/compute → EC2 Instance │
-│ → Key Pair │
-│ → AMI lookup │
+│  module/vpc          → VPC            │
+│  module/networking   → Subnet         │
+│                      → IGW            │
+│                      → Route Table    │
+│  module/security-group → SG rules     │
+│  module/compute      → EC2 Instance   │
+│                      → Key Pair       │
+│                      → AMI lookup     │
 └───────────────────────────────────────┘
-
-
----
+```
 
 ## 📁 Repository Structure
 
+```
 week2-terraform/
 ├── .gitignore
 ├── main.tf
@@ -68,7 +68,7 @@ week2-terraform/
         ├── main.tf
         ├── outputs.tf
         └── variables.tf
-
+```
 ---
 
 ## 🔒 Remote Backend
