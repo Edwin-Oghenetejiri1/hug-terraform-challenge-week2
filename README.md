@@ -46,29 +46,28 @@ Root Module (main.tf)
 ## 📁 Repository Structure
 
 week2-terraform/
-├── main.tf ← calls all modules + remote backend
-├── variables.tf ← root input variables
-├── outputs.tf ← root outputs
-├── terraform.tfvars.example ← example values (copy to terraform.tfvars)
 ├── .gitignore
-└── modules/
-├── vpc/
-│ ├── main.tf ← VPC resource
-│ ├── variables.tf
-│ └── outputs.tf
-├── networking/
-│ ├── main.tf ← Subnet, IGW, Route Table, Association
-│ ├── variables.tf
-│ └── outputs.tf
-├── security-group/
-│ ├── main.tf ← Security Group rules
-│ ├── variables.tf
-│ └── outputs.tf
-└── compute/
-├── main.tf ← EC2, Key Pair, AMI data source
+├── main.tf
+├── outputs.tf
+├── terraform.tfvars.example
 ├── variables.tf
-└── outputs.tf
-
+└── modules/
+    ├── compute/
+    │   ├── main.tf
+    │   ├── outputs.tf
+    │   └── variables.tf
+    ├── networking/
+    │   ├── main.tf
+    │   ├── outputs.tf
+    │   └── variables.tf
+    ├── security-group/
+    │   ├── main.tf
+    │   ├── outputs.tf
+    │   └── variables.tf
+    └── vpc/
+        ├── main.tf
+        ├── outputs.tf
+        └── variables.tf
 
 ---
 
